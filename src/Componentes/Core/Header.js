@@ -4,7 +4,6 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { faX } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import headerLogo from '../../Assets/Images/Mobile/Group 38.png';
-import videoGranada from '../../Assets/Video/TOURGCF.mp4';
 import  logoGranada from '../../Assets/Images/Mobile/logogranada.png';
 import  logoBstadium from '../../Assets/Images/Mobile/logobstadium.png';
 import  wasap from '../../Assets/Images/Desktop/Vector.svg'
@@ -27,11 +26,6 @@ function Header() {
   return (
     <header>
         <div className='header'>
-            <video muted loop autoPlay className='back-video'>
-                <source src={videoGranada} type="video/mp4"></source>
-                Tu navegador no soporta los vídeos de HTML5
-            </video>
-
             <nav>
             <div className='dropdown'>
                 <div className='dropdown-icon'>

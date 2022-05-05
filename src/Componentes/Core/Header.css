@@ -1,10 +1,7 @@
 @media only screen and (max-width: 859px) {
 
     .header {
-        display: flex;
-        justify-content: space-between;
-        background-repeat: no-repeat;
-        background-size: cover;
+        background: lightcoral;
     }
     nav {
         position: relative;
@@ -13,7 +10,6 @@
         justify-content: space-between;
     }
     .back-video{
-        position: fixed;
         height: 700px;
         margin: auto ;
     }
