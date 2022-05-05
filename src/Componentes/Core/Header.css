@@ -1,36 +1,31 @@
 @media only screen and (max-width: 859px) {
-    
+
     .header {
         display: flex;
         justify-content: space-between;
-        align-items: center;
-        position: relative;
         background-repeat: no-repeat;
         background-size: cover;
     }
     nav {
-        position: absolute;
-        width: 100%;
-        top: 0;
-        left: 0;
+        position: relative;
         display: flex;
+        width: 100%;
         justify-content: space-between;
-        align-items: center;
-        margin: 24px auto;
     }
     .back-video{
-        right: 0;
-        top: 0;
-        left: 0;
+        position: fixed;
         height: 700px;
         margin: auto ;
     }
     .dropdown-icon {
+        position: absolute;
+        top: 24px;
+        left: 8px;
         font-size: 36px;
         margin-left: 20px;
         z-index: 2;
     }
-    
+
     .image-logo {
         margin: auto auto;
         z-index: 1;
@@ -53,15 +48,15 @@
     }
     .dropdown-content {
         display: none;
-        position: absolute;
+        /*position: absolute;*/
         background-color: #423333;
         z-index: 1;
         padding-top: 88px;
         padding-bottom: 40px;
         margin-bottom: 0;
-        width: 100vw;  
+        width: 100vw;
         top: -28px;
-        
+
     }
     .dropdown-content li {
         list-style: none;
@@ -82,13 +77,13 @@
     .dropdown-content-desktop li {
         display: none;
     }
-    
+
     .btn-container {
         margin-right: 20px;
         z-index: 1;
     }
     .header-video-content {
-        position: absolute;
+        /*position: absolute;*/
         text-align: center;
         font-family: Livvic;
         top: 120px;
@@ -97,7 +92,7 @@
         bottom: 0;
         margin: auto;
     }
-     
+
     .header-title {
         font-family: Boldness;
         width: 80%;
@@ -130,20 +125,20 @@
     }
     .wasap-logo {
         width: 50px;
-        position: absolute;
+        /*position: absolute;*/
         bottom: 10px;
         right: 10px;
     }
     .wasap-pic {
         width: 100%;
     }
-    
+
 }
 
 
 /*DESKTOP*/
 @media screen and (min-width: 860px) {
-    
+
     .header {
         background-image: linear-gradient(to top right, red, white);
         display: flex;
@@ -160,7 +155,7 @@
         position: relative;*/
     }
     nav {
-        position: absolute;
+        /*position: absolute;*/
         width: 100%;
         top: 0;
         left: 0;
@@ -193,7 +188,7 @@
         font-weight: bold;
         padding: 20px 30px;
     }
-    
+
     button {
         width: 117px ;
         border-radius: 27px;
@@ -221,7 +216,7 @@
         z-index: 1;
         margin-bottom: 0;
         width: 145%;
-        
+
     }
     .dropdown-content-header li {
         list-style: none;
@@ -249,7 +244,7 @@
         bottom: 0;
         margin: auto;
     }
-     
+
     .header-title {
         font-family: Boldness;
         width: 80%;
@@ -285,7 +280,7 @@
     }
     .wasap-logo {
         width: 80px;
-        position: absolute;
+        /*position: absolute;*/
         bottom: 10px;
         right: 10px;
     }

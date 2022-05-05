@@ -13,10 +13,10 @@ import  wasap from '../../Assets/Images/Desktop/Vector.svg'
 
 function Header() {
 
-    
+
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    
-    
+
+
 
     const scrollTo = (nodeSelector) => {
         const domNode = document.querySelector(nodeSelector)
@@ -27,54 +27,53 @@ function Header() {
   return (
     <header>
         <div className='header'>
-
             <video muted loop autoPlay className='back-video'>
                 <source src={videoGranada} type="video/mp4"></source>
                 Tu navegador no soporta los vídeos de HTML5
             </video>
-            
+
             <nav>
             <div className='dropdown'>
                 <div className='dropdown-icon'>
 
                 {
                     isMenuOpen ?
-                    <FontAwesomeIcon icon={faX} style={{color:"white"}}/>
-                    : <FontAwesomeIcon icon={faBars} style={{color:"white"}} onClick={()=>setIsMenuOpen(!isMenuOpen)}/>
+                    <FontAwesomeIcon icon={faX} style={{color:"white"}} onClick={()=>setIsMenuOpen(false)}/>
+                    : <FontAwesomeIcon icon={faBars} style={{color:"white"}} onClick={()=>setIsMenuOpen(true)}/>
                 }
-                    
-                    
+
+
                 </div>
 
                 {
-                    isMenuOpen ? 
+                    isMenuOpen ?
                     <div className='dropdown-content'>
                         <li onClick={() => scrollTo('.desktop-two')}>Mural interactivo</li>
                         <li onClick={() => scrollTo('.desktop-three')}>Experiencia inmersiva 360°</li>
                         <li onClick={() => scrollTo('.desktop-four')}>Foto con jugadores</li>
                     </div> : null
-                } 
+                }
 
-                
+
             </div>
 
-            
+
             <img className='image-logo' src={headerLogo} alt=''></img>
-            
+
 
             <div className='dropdown-content-desktop'>
                     <li onClick={() => scrollTo('.desktop-one')}>¿Qué es?</li>
                     <div className='dropdown-header'>
-                        <li>¿Qué incluye?</li>    
+                        <li>¿Qué incluye?</li>
                     <div className='dropdown-content-header'>
                         <li onClick={() => scrollTo('.desktop-two')}>Mural interactivo</li>
                         <li onClick={() => scrollTo('.desktop-three')}>Experiencia inmersiva 360°</li>
                         <li onClick={() => scrollTo('.desktop-four')}>Foto con jugadores</li>
                     </div>
-                </div>  
+                </div>
                     <li onClick={() => scrollTo('.landing-last')}>Info Práctica</li>
             </div>
-            
+
             <div className='btn-container'>
                 <button onClick={() => window.open("https://bstadium.es/granada-cf/tour-por-el-nuevo-los-carmenes-estadio-de-granada-cf/")}>
                     Comprar entradas
@@ -96,10 +95,10 @@ function Header() {
                 </div>
             </div>
 
-            
-            
+
+
         </div>
-        
+
     </header>
   )
 }
